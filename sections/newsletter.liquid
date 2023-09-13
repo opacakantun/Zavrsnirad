@@ -1,0 +1,12 @@
+<hr>
+<div class="text-centre">
+<div class="section-header text-center">
+{% if section.settings.heading != blank %}
+<label for="Email" class="h1">{{ section.settings.heading | escape}}</label>
+<% endif %>
+{% unless section.settings.subtext == blank %}
+{{ section.settings.subtext }}
+{% endunless %}
+</div>
+{% include 'newsletter-form' %}
+</div>
